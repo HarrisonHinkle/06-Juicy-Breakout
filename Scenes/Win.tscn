@@ -59,6 +59,16 @@ text = "Play again?"
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
 position = Vector2( 519.962, 242.241 )
 frames = SubResource( 6 )
-frame = 1
+frame = 3
 playing = true
+
+[node name="credit" type="Label" parent="."]
+margin_left = 520.048
+margin_top = 371.287
+margin_right = 784.048
+margin_bottom = 386.287
+text = "Music from: https://patrickdearteaga.com"
+__meta__ = {
+"_edit_use_anchors_": false
+}
 [connection signal="pressed" from="Button" to="." method="_on_Button_pressed"]

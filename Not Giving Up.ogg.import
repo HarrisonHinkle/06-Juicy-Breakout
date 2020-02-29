@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/Not Giving Up.ogg-bf9cadc52afbc3332001e9dd9564a1d4.oggstr"
+
+[deps]
+
+source_file="res://Not Giving Up.ogg"
+dest_files=[ "res://.import/Not Giving Up.ogg-bf9cadc52afbc3332001e9dd9564a1d4.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

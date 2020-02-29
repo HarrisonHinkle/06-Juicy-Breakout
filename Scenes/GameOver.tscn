@@ -60,6 +60,16 @@ text = "Play Again?"
 position = Vector2( 514.835, 205.823 )
 scale = Vector2( 5, 5 )
 frames = SubResource( 6 )
-frame = 4
+frame = 1
 playing = true
+
+[node name="credit" type="Label" parent="."]
+margin_left = 580.854
+margin_top = 315.114
+margin_right = 844.854
+margin_bottom = 329.114
+text = "Music from: https://patrickdearteaga.com"
+__meta__ = {
+"_edit_use_anchors_": false
+}
 [connection signal="pressed" from="Button" to="." method="_on_Button_pressed"]

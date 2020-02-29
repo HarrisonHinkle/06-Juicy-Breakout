@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=2]
+[gd_scene load_steps=12 format=2]
 
 [ext_resource path="res://Scripts/Game.gd" type="Script" id=1]
 [ext_resource path="res://Scripts/Paddle.gd" type="Script" id=2]
@@ -8,6 +8,8 @@
 [ext_resource path="res://Scripts/Starting.gd" type="Script" id=6]
 [ext_resource path="res://mode-3024166_1280.jpg" type="Texture" id=7]
 [ext_resource path="res://Scripts/Camera.gd" type="Script" id=8]
+[ext_resource path="res://snap.wav" type="AudioStream" id=9]
+[ext_resource path="res://Not Giving Up.ogg" type="AudioStream" id=10]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 72, 16 )
@@ -253,4 +255,24 @@ __meta__ = {
 }
 
 [node name="Comet" type="Node2D" parent="."]
+
+[node name="snap" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 9 )
+volume_db = 10.0
+pitch_scale = 0.25
+
+[node name="credit" type="Label" parent="."]
+margin_left = 744.973
+margin_top = 579.114
+margin_right = 1008.97
+margin_bottom = 593.114
+text = "Music from: https://patrickdearteaga.com"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="music" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 10 )
+volume_db = -15.0
+autoplay = true
 [connection signal="timeout" from="Starting/Timer" to="Starting" method="_on_Timer_timeout"]

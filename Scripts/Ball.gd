@@ -2,6 +2,7 @@ extends RigidBody2D
 
 onready var Game = get_node("/root/Game")
 onready var Camera = get_node("/root/Game/Camera")
+onready var snap = get_node("/root/Game/snap")
 onready var Starting = get_node("/root/Game/Starting")
 onready var Comet = get_node("/root/Game/Comet")
 
@@ -59,6 +60,7 @@ func _physics_process(delta):
 	for body in bodies:
 		Camera.add_trama(0.4)
 		if body.is_in_group("Tiles"):
+			snap.play()
 			Game.change_score(body.points)
 			add_color(1.0)
 			body.find_node("Explosion").emitting = true
