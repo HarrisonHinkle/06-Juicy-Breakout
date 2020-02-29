@@ -20,7 +20,7 @@ I added 16 feature of my own:
 13.	Animated sprite added to Win screen 
 14.	Added screen shake
 15.	Added sound effect when block is hit
-16.	Added background music 
+16.	Added background music (music by https://patrickdearteaga.com/)
 
 
 
