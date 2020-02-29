@@ -17,8 +17,7 @@ func _ready():
 func change_score(s):
 	score += s
 	$Score.update_score(score)
-	#if there are no more tiles, show the winning screen
-	if len(get_tree().get_nodes_in_group("Tiles")) == 0:
+	if score == 500:
 		get_tree().change_scene("res://Scenes/Win.tscn")
 
 func change_lives(l):
